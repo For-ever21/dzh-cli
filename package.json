@@ -1,5 +1,5 @@
 {
-  "name": "dengzhenhua",
+  "name": "dzh-cli",
   "version": "0.1.0",
   "description": "基于node的脚手架工具-针对vue项目",
   "main": "index.js",
