@@ -137,7 +137,7 @@ function createProject(name) {
                   configFile.dependencies = objKeySort(configFile.dependencies);
                   fs.writeFileSync(fileName, JSON.stringify(configFile, null, 2));
                 }
-                message.info('开始下载依赖包...')
+                message.info('开始下载依赖包... ')
                 require('./install')({
                   success: initComplete.bind(null, name),
                   cwd: name
