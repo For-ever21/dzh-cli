@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 const program = require('commander');
-const common = require('./common');
-const init = require('./init');
+const common = require('../common');
+const initVue2 = require('./init'); // download vue2.0 模板
 
 const { message } = common;
 
 // 查看版本号
-if (process.argv.slice(2).join('') === '-v') {
-  const pkg = require('../package');
-  message.info('mtfy-vue-cli version ' + pkg.version);
+if (process.argv.slice(2).join('') === '-v' || process.argv.slice(2).join('') === '--version') {
+  const pkg = require('../../package');
+  message.info('vue-cli version ' + pkg.version);
   process.exit()
 }
 
@@ -18,7 +18,7 @@ program
   .description('初始化一个vue-cli项目')
   .action(function (name) {
     name = name || 'mtfyApp';
-    init(name)
+    initVue2(name)
   });
 
 // TODO 下一版 进行路由，组件模板的操作

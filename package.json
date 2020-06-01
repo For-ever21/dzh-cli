@@ -1,12 +1,12 @@
 {
   "name": "dzh-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "基于node的脚手架工具-针对vue项目",
   "main": "index.js",
   "author": "dengzhenhua",
   "license": "MIT",
   "bin": {
-    "jsm": "./bin/jsm.js"
+    "mtfyVue2": "./bin/vue2/jsm.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,11 @@
     "commander": "^2.20.3",
     "download-git-repo": "^1.1.0",
     "fs-extra": "^5.0.0",
+    "map-stream": "^0.0.7",
     "inquirer": "^7.1.0",
     "log-symbols": "^4.0.0",
     "ora": "^1.4.0",
+    "vinyl-fs": "^3.0.2",
     "which": "^1.3.0"
   }
 }
