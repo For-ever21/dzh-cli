@@ -1,4 +1,3 @@
-
 const chalk = require('chalk');
 const symbols = require('log-symbols');
 
@@ -17,14 +16,4 @@ const message = {
   }
 };
 
-// 对象属性名进行排序
-function objKeySort(obj) {
-  var newkey = Object.keys(obj).sort();
-  var newObj = {};
-  for (var i = 0; i < newkey.length; i++) {
-    newObj[newkey[i]] = obj[newkey[i]];
-  }
-  return newObj;
-}
-
-module.exports={ message, objKeySort }
+module.exports={ message };

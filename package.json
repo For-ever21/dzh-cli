@@ -1,27 +1,26 @@
 {
-  "name": "dzh-cli",
+  "name": "iwen-cli",
   "version": "0.1.1",
   "description": "基于node的脚手架工具-针对vue项目",
   "main": "index.js",
-  "author": "dengzhenhua",
+  "author": "iwen",
   "license": "MIT",
   "bin": {
-    "mtfyVue2": "./bin/vue2/jsm.js"
+    "iwen-cli": "./bin/jsm.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/For-ever21/dzh-cli.git"
-  },
-  "homepage": "https://for-ever21.github.io/team-standard/0.summary.html",
   "dependencies": {
     "chalk": "^2.4.2",
+    "clui": "^0.3.6",
     "commander": "^2.20.3",
     "download-git-repo": "^1.1.0",
     "fs-extra": "^5.0.0",
-    "map-stream": "^0.0.7",
-    "inquirer": "^7.1.0",
+    "inquirer": "^7.3.3",
     "log-symbols": "^4.0.0",
+    "map-stream": "^0.0.7",
     "ora": "^1.4.0",
+    "semver": "^7.3.2",
+    "shelljs": "^0.8.4",
+    "validate-npm-package-name": "^3.0.0",
     "vinyl-fs": "^3.0.2",
     "which": "^1.3.0"
   }
